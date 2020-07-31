@@ -20,13 +20,15 @@ for (let i = 0; i < hours.length; i++) {
     $(`.hour-${hours[i]}`).addClass('present')
   }
 }
-
+// Adding click funtion to save buttons via saveBtn id
 $(".saveBtn").click(function () {
+  // Getting value of the text area of this which is equal to saveBtn
   var userInput = $(this).siblings('textarea').val()
   console.log($(this).siblings('textarea').attr('id'))
   var hour = $(this).siblings('textarea').attr('id')
   localStorage.setItem(hour, userInput)
 
+  // Grabbing user input from local storage and retreving it when the page is refreshed after hitting save button
 })
 $('#9').val(localStorage.getItem('9'))
 $('#10').val(localStorage.getItem('10'))
