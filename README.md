@@ -20,4 +20,4 @@ When the page is refreshed, the user input will be pulled from local storage and
 
 Happy scheduling!
 
-Link to deployed website:
+Link to deployed website: https://datrimboli.github.io/hw05WorkDayScheduler/
